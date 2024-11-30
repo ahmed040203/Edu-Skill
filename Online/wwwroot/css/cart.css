@@ -1,0 +1,75 @@
+﻿
+
+.cart-header {
+    padding: 120px 0;
+}
+.card-content .alert-info {
+    text-align: center;
+}
+.card-content .alert-info .btn-primary {
+    color: #055160;
+    margin-top: 30px;
+    padding: 8px 40px;
+    border-radius: 0;
+    border-color: #57e1ff;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+}
+.card-content .alert-info .btn-primary:hover{
+    background-color: #81e3f9;
+}
+.card-content .card {
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0 0 5px 0px #e6e6e6;
+    margin-bottom: 25px;
+}
+
+.card-content .img {
+    width: 25%;
+}
+
+.card-content img {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0;
+}
+
+.card-content .card-text {
+    color: #9d9d9d;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.card-content .dolar {
+    font-size: 13px;
+}
+
+.delete button {
+    margin-right: 20px;
+    color: #9d9d9d;
+    font-size: 18px;
+    background-color: transparent;
+    border: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.delete button:hover {
+        color: red;
+}
+
+.content-price h6 {
+    color: #9d9d9d;
+}
+
+.content-price {
+    text-align: center;
+}
+
+    .content-price .btn-primary {
+        width: 50%;
+        padding: 11px 0;
+        border-radius: 0
+    }

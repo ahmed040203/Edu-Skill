@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Online</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/detail.css" />
+    <link rel="stylesheet" href="~/Online.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/templatemo-art-factory.css" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="/Home/Index" class="logo"> EM </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a asp-controller="About" asp-action="Index">About us</a></li>
+                            <li class="scroll-to-section"><a asp-controller="Course" asp-action="Index">Course</a></li>
+       
+                            <li class="scroll-to-section"><a asp-controller="Card" asp-action="Index"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            <li class="scroll-to-section">
+                                    @* <a asp-area="" asp-controller="Account" asp-action="SignOut">Sign Out</a> *@
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Profile
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="/User/Index">My Profile</a></li>
+                                        <li><a class="dropdown-item" asp-controller="Account" asp-action="SignOut">Signout</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+
+    <div class="information-2">
+        <div class="container">
+            <div class="links">
+                <div class="row">
+                    <div class="col">
+                        <h5>Follow Us</h5>
+                        <ul class="line">
+                            <li><i class="fa-brands fa-facebook-f"></i></li>
+                            <li><i class="fa-brands fa-linkedin"></i></li>
+                            <li><i class="fa-brands fa-youtube"></i></li>
+                            <li><i class="fa-solid fa-x"></i></li>
+                            <li><i class="fa-brands fa-telegram"></i></li>
+                            <li><i class="fa-brands fa-instagram"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h5>Work with us</h5>
+                        <ul>
+                            <li>Become an instructor</li>
+                            <li>Blog as guest</li>
+                            <li>Corporate training</li>
+                            <li>Skillup Sitemap</li>
+                            <li>Newsroom</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h5>Discover</h5>
+                        <ul>
+                            <li asp-action="Index" asp-controller="Home">Home</li>
+                            <li asp-action="Index" asp-controller="About">About Us</li>
+                            <li>Services</li>
+                            <li asp-action="Index" asp-controller="Course">Courses</li>
+                            <li>Pages</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+
+            &copy; 2024 - TeachMe
+
+    </footer>
+    <script src="~/js/jquery-2.1.0.min.js"></script>
+    <script src="~/js/popper.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="~/js/owl-carousel.js"></script>
+    <script src="~/js/scrollreveal.min.js"></script>
+    <script src="~/js/waypoints.min.js"></script>
+    <script src="~/js/jquery.counterup.min.js"></script>
+    <script src="~/js/imgfix.min.js"></script>
+
+    <!-- Global Init -->
+    <script src="~/js/custom.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/font-awesome/js/all.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

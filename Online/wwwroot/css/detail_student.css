@@ -1,0 +1,71 @@
+﻿.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.card-header {
+    background-color: #339af0;
+    color: white;
+    padding: 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.students-container {
+    padding: 20px;
+}
+
+.students-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.student-item {
+    background-color: #f7f9fc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.student-info p {
+    margin: 20px 0;
+}
+
+.student-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.student-actions .btn {
+    padding: 10px 20px;
+    background-color: #20c997;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+    .btn:hover {
+        background-color: #12b886;
+    }
+.alert {
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+}

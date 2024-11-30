@@ -1,0 +1,225 @@
+﻿/*-- reset --*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, nav ul, nav li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after, q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*-- start editing from here --*/
+a {
+    text-decoration: none;
+}
+
+.txt-rt {
+    text-align: right;
+}
+
+.txt-lt {
+    text-align: left;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.float-rt {
+    float: right;
+}
+
+.float-lt {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.pos-absolute {
+    position: absolute;
+}
+
+.vertical-base {
+    vertical-align: baseline;
+}
+
+.vertical-top {
+    vertical-align: top;
+}
+
+nav.vertical ul li {
+    display: block;
+}
+
+nav.horizontal ul li {
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*-- end reset --*/
+body {
+    background: #003366;
+    background: -webkit-linear-gradient(to top, #003366, #66a3cc);
+    background: -moz-linear-gradient(to top, #003366, #66a3cc);
+    background: -o-linear-gradient(to top, #003366, #66a3cc);
+    background: linear-gradient(to top, #003366, #66a3cc);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 100;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*-- main --*/
+.main-w3layouts {
+    padding: 3em 0 1em;
+}
+
+
+
+
+input[type="text"], input[type="email"], input[type="password"], input[type="date"],input[type="number"]{
+    font-size: 0.9em;
+    font-weight: 100;
+    width: 100%;
+    display: block;
+    border: none;
+    padding: 0.8em;
+    border: solid 1px #aaaaaa;
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+input.email, input.text.w3lpass {
+    margin: 2em 0;
+}
+
+.text:focus, .text:valid {
+    box-shadow: none;
+    outline: none;
+}
+
+    .text:focus::-webkit-input-placeholder, .text:valid::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: .9em;
+        transform: translateY(-30px);
+        visibility: visible !important;
+    }
+
+::-webkit-input-placeholder {
+    color: #aaaaaa;
+    font-weight: 100;
+}
+
+:-moz-placeholder {
+    color: #ffffff;
+}
+
+::-moz-placeholder {
+    color: #ffffff;
+}
+
+:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+input[type="submit"] {
+    font-size: .9em;
+    color: #ffffff;
+    background: #003366;
+    outline: none;
+    border: 1px solid #003366;
+    cursor: pointer;
+    padding: 0.9em;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+    input[type="submit"]:hover {
+        background: #66a3cc;
+        border-color: #66a3cc;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+    }
+
+p {
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+    p a {
+        color: #ffffff;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+    }
+
+        p a:hover {
+            color: #66a3cc;
+            text-decoration: underline;
+        }
+
+label.form-check-label {
+    font-size: 0.9em;
+}
+
+span.text-danger {
+    color: #ff3300;
+    font-size: 0.9em;
+}
+
+div.text-center {
+    margin-top: 2em;
+}

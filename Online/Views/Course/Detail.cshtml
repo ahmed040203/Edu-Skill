@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+		<link rel="stylesheet" href="~/css/detail.css">
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="info">
+        <h2>@Model.Title</h2>
+        <p class="cont-1">AI Basics Course for Beginners | Learn Artificial Intelligence</p>
+        <span class="enroll">159737 Learners Enrolled</span>
+        <p class="cont-2">@Model.Description</p>
+      </div>
+      <div class="box">
+        <div class="card" style="width: 19rem;">
+
+                    <img src="~/images/@Model.Image" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" class="btn btn-primary">Start learning</a>
+            <p class="card-text">This course include</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><i class="fa-regular fa-clock"></i>@Model.Hours Hours</li>
+                            <li class="list-group-item"><i class="fa-solid fa-play"></i>@Model.Lesson Lesson</li>
+              <li class="list-group-item"><i class="fa-solid fa-star"></i>Best Stars</li>
+            </ul>
+            
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="information">
+    <div class="container">
+      <div class="box-2">
+        <h3>@Model.Title</h3>
+        <div class="content">
+        <div class="row">
+          <div class="col">
+            <ul>
+              <li><i class="fa-solid fa-check"></i>Supervised and unsupervised learning</li>
+              <li><i class="fa-solid fa-check"></i>Time series modeling</li>
+              <li><i class="fa-solid fa-check"></i>Boosting and Bagging techniques</li>
+              <li><i class="fa-solid fa-check"></i>Random forest classifiers</li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              
+              <li><i class="fa-solid fa-check"></i>Deep Learning fundamentals</li>
+              <li><i class="fa-solid fa-check"></i>Native ML</li>
+              <li><i class="fa-solid fa-check"></i>Native Bayes</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+
+
+    <script src="/js/all.min.js"></script>
+		<script src="/js/bootstrap.bundle.min.js"></script>
+		<script src="/js/bootstrap.bundle.min.js.map"></script>
+</body>
+</html>

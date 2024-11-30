@@ -1,0 +1,139 @@
+*{
+  font-family: "Open Sans", sans-serif;;
+}
+html {
+  
+  font-size: 14px;
+}
+
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+.mb-3 {
+    margin-bottom: 0 !important;
+}
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+.information-2 {
+    padding-top: 28px;
+    box-shadow: 0px -6px 5px -5px #f5f5f5;
+    margin-bottom:35px
+}
+
+    .information-2 .links {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .information-2 ul {
+        padding: 0;
+    }
+
+    .information-2 h5 {
+        margin-bottom: 20px;
+        color: #444444;
+    }
+
+    .information-2 ul li {
+        font-size: 14px;
+        margin-bottom: 10px;
+        color: #6c6c6c;
+    }
+
+    .information-2 .line {
+        max-width: 100px;
+        margin: auto;
+    }
+
+        .information-2 .line li {
+            display: inline-block;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        .information-2 .line .fa-facebook-f,
+        .information-2 .line .fa-x,
+        .information-2 .line .fa-instagram,
+        .information-2 .line .fa-youtube,
+        .information-2 .line .fa-linkedin,
+        .information-2 .line .fa-telegram,
+        .information-2 ul li {
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+            .information-2 .line .fa-facebook-f:hover {
+                color: #1877f2;
+            }
+
+            .information-2 .line .fa-x:hover {
+                color: #1da1f2;
+            }
+
+            .information-2 .line .fa-instagram:hover {
+                color: #5851db;
+            }
+
+            .information-2 .line .fa-youtube:hover {
+                color: #ff0000;
+            }
+
+            .information-2 .line .fa-linkedin:hover {
+                color: #0a66c2;
+            }
+
+            .information-2 .line .fa-telegram:hover {
+                color: #0088cc;
+            }
+
+
+.btn-group .btn {
+    padding: 4px 14px;
+    font-size: 15px;
+    border: 1px solid #8381ff;
+    border-radius: 2px;
+    background-color: transparent;
+    color: #8381ff;
+}
+    .btn-group .btn:hover {
+        background-color: transparent;
+        border-color: #8381ff;
+    }
+.btn-secondary.focus, .btn-secondary:focus {
+    box-shadow: none;
+}
+
+.btn.focus, .btn:focus {
+    box-shadow: none;
+}
+
+.btn-check:focus + .btn, .btn:focus {
+    box-shadow: none;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle {
+    background-color: transparent;
+    color: #8381ff;
+    border-color: #8381ff;
+}
+.btn-secondary.focus, .btn-secondary:focus{
+    box-shadow:none;
+}
+footer {
+    background-color: #ededed;
+    color: #676767;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

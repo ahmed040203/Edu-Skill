@@ -1,0 +1,81 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Online.Models.Course
+<div class="container">
+<h1 class="display-6" style="padding:50px 0;text-align:center;">Add New Course</h1>
+<form method="post" action="/Course/Save" class=" border border-2" enctype="multipart/form-data">
+<div class="row">
+    <div class="col">
+        <div class=" m-2">
+            <label class=" form-label">Title</label>
+            <input type="text" name="title" value="@Model?.Title" class=" form-control" />
+        </div>
+    </div>
+    <div class="col">
+        <div class=" m-2">
+            <label class=" form-label">Description</label>
+            <input type="text" name="description" value="@Model?.Description" class="form-control" />
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <div class=" m-2">
+            <label class=" form-label">Price</label>
+            <input type="number" name="price" value="@Model?.Price" class="form-control" />
+        </div>
+    </div>
+    <div class="col">
+        <div class=" m-2">
+            <label class=" form-label">Number of Lesson</label>
+            <input type="number" name="lesson" value="@Model?.Lesson" class="form-control" />
+        </div>
+    </div>
+</div>
+    
+<div class="row">
+        <div class="col">
+            <div class=" m-2">
+                <label class=" form-label">Number of hours</label>
+                <input type="number" name="hours" value="@Model?.Hours" class="form-control" />
+            </div>
+        </div>
+        <div class="col">
+            <div class=" m-2">
+                <label class=" form-label">Image</label>
+                <input type="file" asp-for="clientFile" class="form-control" />
+            </div>
+        </div>
+</div>
+
+
+    
+    @* <div class=" m-2">
+        <label class=" form-label">InstructorId</label>
+        <input type="number" name="instructorid" value="@Model?.InstructorId" class="form-control" />
+    </div> *@
+    <div class="row">
+    <div class="col">
+    <div class=" m-2">
+        <label class=" form-label">Category</label>
+        
+        <select name="categoryid" id="categoryid" class="form-control">
+            @foreach(Category i in ViewBag.categ){
+                <option value="@i.CategoryId">@i.Name</option>
+            }
+        </select>
+    </div>
+    </div>
+    <div class="col">
+            <div class=" m-2">
+                <label class=" form-label">Intructor Id</label>
+                <input type="number" name="instructorid" value="@Model?.InstructorId" class="form-control" />
+            </div>
+    </div>
+    </div>
+    <button type="submit" class=" btn btn-primary m-2">Save</button>
+</form>
+</div>

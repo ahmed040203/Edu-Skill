@@ -1,0 +1,140 @@
+﻿@* 
+
+
+@model List<Users>
+
+@{
+    ViewData["Title"] = "Students";
+}
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/detail_student.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                Student Details
+            </div>
+
+            <div class="students-container">
+
+                <!-- Alert if no students are available -->
+                @if (!Model.Any())
+                {
+                    <div class="alert alert-warning text-center">
+                        No students added
+                    </div>
+                }
+                else
+                {
+                    <div class="students-list">
+                        @foreach (var student in Model)
+                        {
+                            <div class="student-item">
+                                <div class="student-info">
+                                    <p><strong>Name:</strong> @student.FirstName</p>
+                                    <p><strong>ID:</strong> @student.Id</p>
+                                    <p><strong>Email:</strong> @student.Email</p>
+                                    <p><strong>Date Registered:</strong> @student.BirthDate.ToString("yyyy-MM-dd")</p>
+                                </div>
+
+                                <div class="student-actions">
+                                    <a asp-action="Edit" asp-controller="Student" asp-route-id="@student.Id" class="btn btn-success">
+                                        Edit
+                                    </a>
+                                </div>
+
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- Include Font Awesome for icons -->
+
+
+<!-- Include Font Awesome for icons --> *@
+
+
+@model List<Online.Models.Users>
+
+@{
+    ViewData["Title"] = "Users";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/detail_student.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                User Details
+            </div>
+            <div class="students-container">
+                <div class="students-list">
+                @if (ViewData["LastUserAdded"] != null)
+                {
+                    var lastUser = ViewData["LastUserAdded"] as Online.Models.Users;
+                    <div class="user-info">
+                        <p><strong>First Name:</strong> @lastUser.FirstName</p>
+                        <p><strong>Last Name:</strong> @lastUser.LastName</p>
+                        <p><strong>Email:</strong> @lastUser.Email</p>
+                         <p><strong>Phone:</strong> @lastUser.PhoneNumber</p>
+                        <p><strong>Birth Date:</strong> @lastUser.BirthDate.ToString("yyyy-MM-dd")</p>
+                        
+                    </div>
+                    <div class="user-actions">
+                        <a asp-action="Edit" asp-controller="User" asp-route-id="@lastUser.Id" class="btn btn-success">
+                            Edit
+                        </a>
+                            <a asp-action="Index" asp-controller="Home" class="btn btn-outline-dark">
+                                Back to home
+                            </a>
+                    </div>
+                }
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+
+        .card{
+            margin-top: 115px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            text-align: center;
+        }
+        .card-header{
+            background-color: #6f7fed;
+        }
+        .card p{
+            margin-bottom: 16px;
+        }
+        .card strong{
+            margin-right:5px;
+        }
+
+        .user-actions .btn-outline-dark:hover{
+            background-color: #484848;
+        }
+    </style>
+</body>
+</html>

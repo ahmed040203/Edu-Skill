@@ -1,0 +1,173 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/course.css" />
+</head>
+<body>
+    <h1 class="display-6">Courses</h1>
+    <div class="container">
+        
+        @* <a href="/Course/New" class="btn btn-outline-primary">New</a> *@
+        @foreach (var i in Model)
+        {
+            <div class="card">
+                <div class="card-body">
+                    <div class="_img">
+                        @if (@i.Price > 200)
+                        {
+                            <span class="badge text-bg-success">New</span>
+                        }
+
+                        <img src="~/images/@i.Image" class="card-img " />
+                    </div>
+                    <div class="content">
+                        <h5 class="card-title"><a asp-action="Detail" asp-controller="Course" asp-route-id="@i.CourseId">@i.Title</a></h5>
+                        <span class="ico"><i class="fa-solid fa-circle-play"></i>@i.Lesson lesson</span>
+                        <span class="ico"><i class="fa-solid fa-clock"></i>@i.Hours Hours</span>
+                        <p class="card-text">@i.Description</p>
+                        <form asp-controller="Card" asp-action="AddToCart" method="post">
+                            <input type="hidden" name="courseId" value="@i.CourseId" />
+                            <button type="submit" class="btn btn-outline-primary">Add to cart</button>
+                        </form>
+
+                    </div>
+                    <div class="price">
+                        <h3>@i.Price<span>$</span></h3>
+                    </div>
+                </div>
+            </div>
+            <hr />
+        }
+    </div>
+
+    
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@* <div class="categ">
+            <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Category
+                </button>
+                <ul class="dropdown-menu">
+                    @foreach (Category i in ViewBag.categ)
+                    {
+                        <li><a class="dropdown-item" href="#" value="@i.CategoryId">@i.Name</a></li>
+                    }
+                </ul>
+            </div>
+        </div> *@
