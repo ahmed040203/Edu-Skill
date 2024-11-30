@@ -19,3 +19,7 @@ Edu Skill is a web application for online courses, allowing students to explore,
 1. Clone the repository:
    ```bash
    git clone https://github.com/ahmed040203/Edu-Skill.git
+2. Open the solution in Visual Studio.
+3. Restore NuGet packages.
+4. Update the database connection string in appsettings.json.
+5. Run the application.
